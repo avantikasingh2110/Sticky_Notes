@@ -60,6 +60,8 @@ body {
 #text_area {
     border-radius: 5px;
     box-shadow: 5px 5px 10px 2px #45a66c;
+    padding: 1rem;
+    font-weight: 600;
     
 }
 
@@ -105,6 +107,7 @@ body {
 #notes_container {
     display: flex;
     width: 100%;
+    flex-wrap: wrap;
 
 }
 
@@ -117,10 +120,47 @@ body {
     width: 25%;
     height: 10rem;
     position: relative;
+    padding: 1.5rem;
+    margin: 1.5rem 1rem 1rem 1rem;
+    word-wrap: break-word;
+    border-radius: 10px;
 
     button {
         position: absolute;
-        top: 1.6rem;
-        right: 8%;
+        top: 0.5rem;
+        right: 0.4rem;
     }
 }
+
+/* @media screen and (max-width: 768px) {
+    #left-container, #right_container {
+        width: 100%;
+        padding: 10px;
+    }
+
+    #text_area {
+        font-size: 1em;
+    }
+
+    #button_div {
+        flex-direction: column;
+    }
+
+    #add_button, #clear_button {
+        margin: 10px 0;
+    }
+} */
+
+
+/* @media screen and (max-width: 768px) {
+    button {
+        padding: 8px 16px;
+        font-size: 0.9em;
+    }
+} */
+
+/* @media screen and (max-width: 768px) {
+    #left-container_heading h1 {
+        font-size: 1.5rem;
+    }
+} */
