@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sticky Notes</title>
+    <link rel="stylesheet" href="./index.css">
+    <link rel="icon" href="./Images/Favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles:wght@400;700&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&family=Prociono&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="main_container">
+        <div id="left-container">
+            <div id="left-container_heading">
+                <h1>Write your Task 📝</h1>
+            </div>
+            <div id="notes_Area">
+                <div id="text_area_div">
+                    <textarea placeholder="// Write a note here" name="textarea" id="text_area" rows="15" cols="60"></textarea>
+                </div>
+                
+                <div id="color_div">
+                    <br><br>
+                    <p>Font Colour</p>
+                    <input type="color" name="notes_font_color" id="stiky_notes_font_color">
+                    <br><br>
+                    <p>Sticky Notes Colour</p>
+                    <input type="color" name="sticky_notes_color" id="stiky_notes_color">
+                </div>
+            </div>
+
+            <div id="button_div">
+                <button id="add_button">Add Notes</button>
+                <button id="clear_button">Clear Notes</button>
+            </div>
+        </div>
+
+        <div id="right_container">
+            <h1>Your Notes 📝</h1>
+            <p id="message">You have not added a note yet</p>
+            <div id="notes_container"></div>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
